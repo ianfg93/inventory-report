@@ -3,6 +3,7 @@ import json
 
 
 class JsonImporter(Importer):
+    @staticmethod
     def import_data(file_path):
         type = file_path.split(".")[1]
         if type != "json":

@@ -3,6 +3,7 @@ import xml.etree.ElementTree as ET
 
 
 class XmlImporter(Importer):
+    @staticmethod
     def import_data(file_path):
         type = file_path.split(".")[1]
         if type != "xml":
